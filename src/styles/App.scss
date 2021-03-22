@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(bg.jpg);
+}
+
+@font-face {
+  font-family: "Passengers";
+  src: url("Pasajero.otf");
+}
+
+.App {
+  position: relative;
+}
+
+.main {
+  display: block;
+}
+
+.title {
+  margin: 30px 0 0 10px;
+  font-family: "Passengers";
+  color: white;
+  letter-spacing: 15px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.space {
+  font-family: "Passengers";
+  font-size: 80px;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+.subtitle,
+.imgTitle,
+.datePicker {
+  color: white;
+  text-align: center;
+}
+
+.image {
+  border-radius: 5px;
+}
+
+// mobile
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .box {
+    width: calc(50vh - 10px);
+    //   height: calc(50vh - 10px);
+  }
+  .title {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+  .imgTitle {
+    font-size: 30px;
+  }
+}
+
+// desktop
+@media only screen and (min-width: 601px) {
+  .container {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+  .box {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  max-width: 600px;
+  //  max-height: 600px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.dialogBtn {
+  font-family: "Passengers";
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.textContainer {
+  color: white;
+}
+
+.explanation {
+  text-align: justify;
+  background-color: black;
+}
+
+.explanationContent {
+  margin: 5px;
+}
+
+#date {
+  background-color: #b0bec5;
+  color: black;
+  border-radius: 5px;
+}
+
+.footer {
+  display: none;
+  text-align: center;
+  color: white;
+}
+
+.popular {
+  color: white;
+  text-align: center;
+}
+
+// .header {
+//   grid-area: navbar;
+// }
+// .main {
+//   grid-area: main;
+// }
+// .footer {
+//   grid-area: footer;
+// }
+
+// .grid-container {
+//   display: grid;
+//   grid-template-areas:
+//     "navbar"
+//     "main"
+//     "footer";
+//   //	grid-gap: 1px;
+//   //	padding: 0 30px;
+// }
