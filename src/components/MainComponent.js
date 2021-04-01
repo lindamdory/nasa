@@ -4,7 +4,6 @@ import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
-import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Checkbox from "@material-ui/core/Checkbox";
 
@@ -52,17 +51,17 @@ function MainComponent() {
     setState({ ...state, [event.target.name]: event.target.checked });
   };
 
-  //---------------------date--------------------//
-  let maxDate = document.getElementById("date");
-  let d = new Date();
-  let year = d.getFullYear();
-  let month = d.getMonth() + 1;
-  let day = d.getDate();
-  let actualDate = String(year + "-" + month + "-" + day);
-  // maxDate.setAttribute("max", actualDate);
-  if (day <= 9) {
-    day = String("0" + day);
-  }
+  // //---------------------date--------------------//
+  // let maxDate = document.getElementById("date");
+  // let d = new Date();
+  // let year = d.getFullYear();
+  // let month = d.getMonth() + 1;
+  // let day = d.getDate();
+  // let actualDate = String(year + "-" + month + "-" + day);
+  // // maxDate.setAttribute("max", actualDate);
+  // if (day <= 9) {
+  //   day = String("0" + day);
+  // }
 
   // // let dayN = day;
   // // let dateRange = String(year + "-" + month + "-" + (dayN + 20));
@@ -92,7 +91,6 @@ function MainComponent() {
           id="date"
           type="date"
           defaultValue="2021-03-22"
-          maxValue={actualDate}
           onChange={(e) => {
             setDate(e.target.value);
           }}
@@ -159,10 +157,6 @@ function MainComponent() {
                   Subscribe to the NASA Newsletter
                 </DialogTitle>
                 <DialogContent>
-                  <DialogContentText>
-                    To subscribe to our newsletter, please enter your email
-                    address. We will send updates weekly.
-                  </DialogContentText>
                   <TextField
                     autoFocus
                     margin="dense"
@@ -186,7 +180,7 @@ function MainComponent() {
                     name="checked"
                     color="primary"
                   ></Checkbox>
-                  <label htmlFor="checkbox">Good Luck!</label>
+                  <label htmlFor="checkbox">I need my space.</label>
                 </DialogContent>
                 <DialogActions>
                   <Button onClick={handleClose} color="primary">

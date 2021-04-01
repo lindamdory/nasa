@@ -52,11 +52,9 @@ const HeaderComponent = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <h1 className="title">
-        I NEED MY<br></br>
-        <span className="space">SPACE</span>
-      </h1>
-      <h3 className="subtitle">Astronomy Picture of the Day</h3>
+      <h4 className="title">I NEED MY</h4>
+      <h2 className="space">SPACE</h2>
+      <h4 className="subtitle">Astronomy Picture of the Day</h4>
     </>
   );
 };
